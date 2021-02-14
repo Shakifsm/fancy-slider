@@ -151,12 +151,12 @@ document.getElementById("search").addEventListener("keypress", function (event) 
   }
 });
 
-// Loading Spinner
+// Added Spinner
 const toggleSpinner = () => {
   document.getElementById("loading-spinner").classList.toggle("d-none");
 };
 
-// Loading counter
+// Added image Count
 const displayCounter = () => {
   document.getElementById("display-count").classList.remove("d-none");
 };
