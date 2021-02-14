@@ -33,7 +33,7 @@ const getImages = (query) => {
   )
     .then((response) => response.json())
     .then((data) => showImages(data.hits))
-    .catch((err) => displayError());
+    .catch(err => console.log(err))
     toggleSpinner();
 };
 
@@ -159,10 +159,4 @@ const toggleSpinner = () => {
 // Loading counter
 const displayCounter = () => {
   document.getElementById("display-count").classList.remove("d-none");
-};
-
-// Error Message
-const displayError = () => {
-  const errorTag = document.getElementById("error-msg");
-  errorTag.innerText = "Something went wrong!";
 };
